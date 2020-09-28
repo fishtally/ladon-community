@@ -38,7 +38,6 @@ func NewRedisManager(db *redis.Client, keyPrefix string) *RedisManager {
 	if keyPrefix == "" {
 		keyPrefix = "ladon"
 	}
-
 	return &RedisManager{
 		db:        db,
 		keyPrefix: keyPrefix,
